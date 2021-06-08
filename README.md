@@ -1,24 +1,38 @@
-# Lexique-Webservices-Persistance
+# Lexique pour Webservices & Persistance
 
 ## Questions :
 ### REST - Quelles sont les 6 contraintes ?
 Client-Server - Stateless Server - Cache - Uniform interface – Layered System
 ### Expliquer le rôle de chacune des contraintes 
-Client-Server : Un mode de communication avec séparation de rôles entre client et serveur.
-Stateless Server : Les requêtes doivent contenir toutes les informations nécessaires au traitement.
-Cache : La réponse du serveur doit être cacheable côté client.
-Uniform interface : La méthode de communication entre client et serveur doit être uniforme avec des ressources identifiables
-Layered System : Le système doit permettre le rajout de couches intermédiaires (proxy server, firewall, CDN, etc …).
+- Client-Server : Un mode de communication avec séparation de rôles entre client et serveur.
+- Stateless Server : Les requêtes doivent contenir toutes les informations nécessaires au traitement.
+- Cache : La réponse du serveur doit être cacheable côté client.
+- Uniform interface : La méthode de communication entre client et serveur doit être uniforme avec des ressources identifiables
+- Layered System : Le système doit permettre le rajout de couches intermédiaires (proxy server, firewall, CDN, etc …).
 ### API - 5 principaux éléments composant une requête Http :
-...
+Method, Path, Version of the protocol, Headers, Body
 ### 5 principaux verbes HTTP :
-CREATE, GET, POST, PUT, DELETE
+GET, POST, PUT, CREATE, DELETE
 ### JAVA - Rôle d'une annotation java :
-...
+le rôle des annotations sont d'intégrer au langage Java des métadonnées.
 ### Rôle du try catch :
-Try... catch regroupe des instructions à exécuter et définit une réponse si l'une de ces instructions provoque une exception.
+Try catch regroupe des instructions à exécuter et définit une réponse si l'une de ces instructions provoque une exception.
 #### Cache
 Fichiers temporaires qui permet de sauvegarder des données
+### Pourquoi faut il fermer ses ressources en informatique (ie: fichiers, connexions ...)
+Il faut fermer ses ressources aux maximum pour éviter toutes failles informatique ou bien le risque de perdre ses données.
+### Rôle du try with ressources :
+Il permet de définir une ressource qui sera automatiquement fermée à la fin de l'exécution du bloc de code de l'instruction.
+### A quoi sert Lombok ?
+C'est un outil qui fournit un ensemble d'annotations utiles pour éliminer une grande quantité de code standard de vos classes Java.
+### Quelles sont les annotations Lombok 
+- @FieldDefaults(level=AccessLevel.PRIVATE) : passe tous les champs en private
+- @NoArgsConstructor : génère le constructeur sans argument et public
+- @AllArgsConstructor : génère le constructeur avec tous les arguments et public (pour l'exemple)
+- @Getter : génère tous les getters sur les champs
+- @Setter : génère tous les setters sur les champs
+- @EqualsAndHashCode(of=...) : génère equals et hashCode (et d'autres méthodes) sur les champs donnés
+- @ToString(of=...) : génère toString sur les champs donnés.
 ## Lexique :
 #### Interropérabilité
 Des systèmes qui peuvent s'adapter et communiquer avec d'autres systèmes
@@ -95,7 +109,7 @@ Permet d'ajouter des éléments meta-données dans un code source. Il est access
 #### Port informatique	
 Un port informatique c'est un système permettant aux ordinateurs de recevoir ou d'émettre des informations
 #### Endpoint	
-///
+Permet d'accéder à un service en particulier
 #### Connection Pool
 Le pool de connexions va pré-initialiser un nombre donné de connexions, lorsque l'application démarre. Le pool de connexions va se charger de distribuer ses objets Connection aux méthodes de l'application qui en ont besoin.
 #### JVM	
@@ -111,11 +125,12 @@ Un fichier Jar permet de distribuer un ensemble de classes Java. Permet de stock
 #### API
 Permet d’établir des connexions entre plusieurs logiciels pour échanger des données.
 #### Statement	
-///
+Les statements Java sont des instructions qui indiquent au langage de programmation ce qu'il doit faire. 
 #### Chaîne de connexion à une base de donnée	
 Ce sont les informations nécessaires pour que votre application puisse accéder à votre base de données. Par exemple : le nom de la BDD, le mot de passe, le nom d'utilisateur, le port etc
 #### Connexion
 Lien fort entre deux systèmes
 #### Commit (transaction)	
 Permet d'archiver / valider les modifications effectuées
-#### Mapper	C'est un type de programme pour simuler une base de données orientée objet
+#### Mapper	
+C'est un type de programme pour simuler une base de données orientée objet
