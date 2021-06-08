@@ -2,19 +2,24 @@
 
 ## Questions :
 ### REST - Quelles sont les 6 contraintes ?
-...
-### REST - Expliquer le rôle de chacune des contraintes 
-...
+Client-Server - Stateless Server - Cache - Uniform interface – Layered System
+### Expliquer le rôle de chacune des contraintes 
+Client-Server : Un mode de communication avec séparation de rôles entre client et serveur.
+Stateless Server : Les requêtes doivent contenir toutes les informations nécessaires au traitement.
+Cache : La réponse du serveur doit être cacheable côté client.
+Uniform interface : La méthode de communication entre client et serveur doit être uniforme avec des ressources identifiables
+Layered System : Le système doit permettre le rajout de couches intermédiaires (proxy server, firewall, CDN, etc …).
 ### API - 5 principaux éléments composant une requête Http :
 ...
-### API - 5 principaux verbes HTTP :
+### 5 principaux verbes HTTP :
 CREATE, GET, POST, PUT, DELETE
 ### JAVA - Rôle d'une annotation java :
 ...
-
+### Rôle du try catch :
+Try... catch regroupe des instructions à exécuter et définit une réponse si l'une de ces instructions provoque une exception.
 #### Cache
 Fichiers temporaires qui permet de sauvegarder des données
-
+## Lexique :
 #### Interropérabilité
 Des systèmes qui peuvent s'adapter et communiquer avec d'autres systèmes
 #### Scalabilité
